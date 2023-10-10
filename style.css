@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+@media {
+  min-width: 320px;
+  max-width: 1200px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px 10px;
+  grid-template-columns: 16rem 1fr 25rem;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+  "header header header"
+  "hero hero hero"
+  "main main sidebar"
+  "footer footer footer";
+  }
+
+  header {
+    grid-area: header;
+    margin: 5% 20% 5% 20%;
+    border-style: ridge;
+    border-color: #C6B89E;
+    background-image: url(https://images.pexels.com/photos/2736497/pexels-photo-2736497.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat; 
+    background-size: 100% auto;
+    background-position: center;       
+    text-align: center;
+  }
+
+button {
+  background-color: #F7ECCA;
+  border-style: ridge;
+  color: #2f3312;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+  .hero-banner {
+    grid-area: hero;
+    text-align: center;
+  }
+
+  main {
+  grid-area: main;
+  border-style: ridge;
+  border-color: #C6B89E;
+  border-radius: ;
+  }
+
+  img {
+    min-width: 150px;
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-image: url(https://images.pexels.com/photos/7193624/pexels-photo-7193624.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat; 
+    background-size: 90%;
+    background-position: center;
+  
+  }
+
+  .sidebar > p {
+  margin-top: none;
+  margin-right: 8%;
+  margin-left: 5%;
+  font-size: 16px;
+  position: absolute;
+  }
+
+  footer {
+    grid-area: footer;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+    
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #F7ECCA;
+  }
+
+p {
+  color: #B35605;
+  margin: 20px;
+}
+
+h1, h2 {
+  color: #868A6A;
+  text-align: center;
+}
+
+
